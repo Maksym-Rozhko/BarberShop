@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>
+        Barber Shop Store
+    </title>
+</head>
+<body>
+    <div class="pop-up">
+        <button class="pop-up-close" type="button" onclick="this.parentElement.style.display='none';"></button>
+        <form class="pop-up-form" action="https://fom.in.ua/echo" method="POST">
+            <h3 class="pop-up-title">
+                Contact us!
+            </h3>
+            <h2 class="pop-up-text">
+                Please leave your details and our manager will contact you within an hour.
+            </h2>
+            <label class="pop-up-label">
+                Name:
+                <input class="pop-up-input" placeholder="Gregory Simmmons" type="text" name="name">
+            </label>
+            <label class="pop-up-label">
+                Emain:
+                <input class="pop-up-input" placeholder="dwight.fleming@example.com" type="mail" name="mail">
+            </label>
+            <label class="pop-up-label">
+                Phone:
+                <input class="pop-up-input" placeholder="(307) 555-0133" type="tel" name="tel">
+            </label>
+            <label class="pop-up-label comment-label">
+                Your comment:
+                <textarea class="pop-up-label pop-up-comment" name="comment" cols="30" rows="10">Please leave your comment...</textarea>
+            </label>
+            <button class="pop-up-btn">
+                contact me
+            </button>
+        </form>
+    </div>
+    <header class="header page_header"><!--------------------header START---------------------->
+        <div class="header_fixed">
+            <div class="wrapper">
+                <div class="menu">
+                    <div class="menu_burger">
+                        <button class="nav-burger" type="button" onclick="openbox('box');">
+                            <span class="nav-burger-item page_burger"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="navigation_logo nav-none">
+                        <img class="nav_logo" src="./assets/images/png/Logo.png" alt="Barber Shop logo">
+                    </a>
+                    <div class="navigation_links nav-none">
+                        <a href="index.html" class="navigation_link navigation--active">
+                            Home
+                        </a>
+                        <a href="page2.html" class="navigation_link">
+                            Shop
+                        </a>
+                        <a href="#" target="_blank" class="navigation_link">
+                            Gallery
+                        </a>
+                    </div>
+                    <a href="#" class="menu_basket">
+                        <svg class="basket_icon" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.12838 2.94737C5.54963 1.82218 6.66191 1 8.00002 1C9.33812 1 10.4504 1.82218 10.8717 2.94737L8 2.94737L5.12838 2.94737ZM11.9717 3.15789C11.9569 3.08701 11.9402 3.01682 11.9216 2.94737C11.467 1.25152 9.88357 0 8.00002 0C6.11647 0 4.53303 1.25152 4.07845 2.94737C4.05983 3.01682 4.04311 3.08701 4.02834 3.15789H0.52855C0.205257 3.15789 -0.0330441 3.46008 0.0423292 3.77447L2.64172 14.6166C2.69563 14.8414 2.8967 15 3.12794 15H12.8721C13.1033 15 13.3044 14.8414 13.3583 14.6166L15.9577 3.77447C16.0331 3.46008 15.7948 3.15789 15.4715 3.15789H11.9717ZM8 3.94737L0.86878 3.94737L3.23744 13.8271C3.29135 14.052 3.49243 14.2105 3.72366 14.2105H12.2764C12.5076 14.2105 12.7087 14.052 12.7626 13.8271L15.1312 3.94737H12.0528H11.0528L8 3.94737Z" fill="white"/>
+                        </svg>
+                        <span class="basket_digit">
+                            0
+                        </span>
+                    </a>
+                    <div class="header-content_button nav-none">
+                        <button type="button" class="header_button button-margin">
+                            Contact us
+                        </button>
+                        <button type="button" class="header_button">
+                            Book now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation page_navigation" id="box">
+            <div class="wrapper">
+                <div class="menu_burger">
+                    <button class="nav-burger active" type="button" onclick="openbox('box');">
+                        <span class="nav-burger-item"></span>
+                    </button>
+                </div>
+                <form class="form_box">
+                    <legend class="form_master">
+                        Choose something
+                    </legend>
+                    <div class="form_choose">
+                        <label class="check">
+                            <input class="check-input" type="checkbox" name="something" valur="master1" checked>
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="checkbox" name="something" valur="master2">
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="checkbox" name="something" valur="master3" checked>
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="checkbox" name="something" valur="master4">
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="checkbox" name="something" valur="master5">
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                    </div>
+                    <legend class="form_master">
+                        Choose something
+                    </legend>
+                    <div class="form_choose">
+                        <label class="check">
+                            <input class="check-input" type="radio" name="master" valur="master1">
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="radio" name="master" valur="master2" checked>
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="radio" name="master" valur="master3">
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="radio" name="master" valur="master4">
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check">
+                            <input class="check-input" type="radio" name="master" valur="master5">
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                    </div>
+                    <legend class="form_master">
+                        Choose something
+                    </legend>
+                    <div class="slider">
+                        <span class="slider-line"></span>
+                        <span class="btn-line"></span>
+                        <button type="button" class="slider-btn min-price"></button>
+                        <button type="button" class="slider-btn max-price"></button>
+                        <label class="slider-label min-label">
+                            <input class="slider-input" type="range" name="min" value="60" min="10" max="9000" step="10">
+                            60
+                        </label>
+                        <label class="slider-label max-label">
+                            <input class="slider-input" type="range" name="max" value="800" min="100" max="2000" step="100">
+                            800
+                        </label>
+                    </div>
+                    <div class="count_box">
+                        <div class="from_to">
+                            <span class="from_text">From:</span>
+                            <span class="from_price">60</span>
+                        </div>
+                        <div class="from_to_box">
+                            <span class="from_text">To:</span>
+                            <span class="from_price">800</span>
+                        </div>
+                    </div>
+                    <button class="choose_button" type="button">
+                        SHOW
+                    </button>
+                </form>
+            </div>
+        </nav>
+        <div class="header_inner page_header_inner">
+            <div class="wrapper">
+                <div class="header-content page_header_content">
+                    <a href="#" target="_blank" class="page_header_discont">
+                        <img class="discont_img" src="./assets/images/png/pages2/50.png" alt="discont">   
+                    </a>
+                    <a href="#" target="_blank" class="page_header_discont">
+                        <img class="discont_img" src="./assets/images/png/pages2/brandySale.png" alt="Brandy Sale">    
+                    </a>
+                </div>
+            </div>
+            <button class="team_button btn-mob-hidden btn-next-slide">
+                <svg class="page_slide_size" width="18" height="34" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 22L12 12L2 2" stroke="#FF7A00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="team_button btn-mob-hidden btn-prev-slide">
+                <svg class="page_slide_size" width="18" height="34" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22L2 12L12 2" stroke="#FF7A00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header><!--------------------header END---------------------->
+    <div class="store_search">
+        <div class="wrapper">
+            <div class="search_container">
+                <div class="header_search">
+                    <label class="pop-up-label search_label">
+                        <span class="search_lupa">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.34115 6.15891L3.83479 0.652344C3.01471 1.92945 1.92934 3.01446 0.653076 3.83498L6.15944 9.34075C7.03878 10.2197 8.46419 10.2197 9.34115 9.34075C10.2197 8.46296 10.2197 7.03909 9.34115 6.15891Z" fill="#DFDFDF"/>
+                            </svg>
+                        </span>
+                        <input class="pop-up-input inner-name search_input" placeholder="Search something you need..." type="search" name="name">
+                    </label>
+                </div>
+                <button type="button" class="search_button">
+                    SEARCH
+                </button>
+            </div>
+        </div>
+    </div>  
+    <div class="filters filters-hidden">
+        <div class="wrapper">
+            <div class="filter-and-store">
+                <form class="filters_tool">
+                    <a href="#" class="filter_box">
+                        Filters
+                        <span class="filter_btn"></span>
+                    </a>
+                    <a href="#" class="style_view">
+                        <svg class="ser" width="24"height="24"viewBox="0 0 24 24"fill="none"xmlns="http://www.w3.org/2000/svg"><mask id="path-2-inside-1"fill="white"><rect x="3"y="3"width="8"height="8"rx="1"/></mask><rect class="style-hover" x="3"y="3"width="8"height="8"rx="1"stroke="#222222"stroke-width="4"mask="url(#path-2-inside-1)"/><mask id="path-3-inside-2"fill="white"><rect x="13"y="3"width="8"height="8"rx="1"/></mask><rect class="style-hover" x="13"y="3"width="8"height="8"rx="1"stroke="black"stroke-width="4"mask="url(#path-3-inside-2)"/><mask id="path-4-inside-3"fill="white"><rect x="13"y="13"width="8"height="8"rx="1"/></mask><rect class="style-hover" x="13"y="13"width="8"height="8"rx="1"stroke="#222222"stroke-width="4"mask="url(#path-4-inside-3)"/><mask id="path-5-inside-4"fill="white"><rect x="3"y="13"width="8"height="8"rx="1"/></mask><rect class="style-hover" x="3"y="13"width="8"height="8"rx="1"stroke="black"stroke-width="4"mask="url(#path-5-inside-4)"/></svg>
+                    </a>
+                    <div class="form_filter_hidden">
+                        <legend class="form_master ">
+                            Choose something
+                        </legend>
+                        <div class="form_choose">
+                            <label class="check">
+                                <input class="check-input" type="checkbox" name="something" valur="master1" checked>
+                                <span class="check-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="checkbox" name="something" valur="master2">
+                                <span class="check-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="checkbox" name="something" valur="master3" checked>
+                                <span class="check-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="checkbox" name="something" valur="master4">
+                                <span class="check-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="checkbox" name="something" valur="master5">
+                                <span class="check-box"></span>
+                                Choose something
+                            </label>
+                        </div>
+                        <legend class="form_master">
+                            Choose something
+                        </legend>
+                        <div class="form_choose">
+                            <label class="check">
+                                <input class="check-input" type="radio" name="master" valur="master1">
+                                <span class="radio-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="radio" name="master" valur="master2" checked>
+                                <span class="radio-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="radio" name="master" valur="master3">
+                                <span class="radio-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="radio" name="master" valur="master4">
+                                <span class="radio-box"></span>
+                                Choose something
+                            </label>
+                            <label class="check">
+                                <input class="check-input" type="radio" name="master" valur="master5">
+                                <span class="radio-box"></span>
+                                Choose something
+                            </label>
+                        </div>
+                        <legend class="form_master">
+                            Choose something
+                        </legend>
+                        <div class="slider">
+                            <span class="slider-line"></span>
+                            <span class="btn-line"></span>
+                            <button type="button" class="slider-btn min-price"></button>
+                            <button type="button" class="slider-btn max-price"></button>
+                            <label class="slider-label min-label">
+                                <input class="slider-input" type="range" name="min" value="60" min="10" max="9000" step="10">
+                                60
+                            </label>
+                            <label class="slider-label max-label">
+                                <input class="slider-input" type="range" name="max" value="800" min="100" max="2000" step="100">
+                                800
+                            </label>
+                        </div>
+                        <div class="count_box">
+                            <div class="from_to">
+                                <span class="from_text">From:</span>
+                                <span class="from_price">60</span>
+                            </div>
+                            <div class="from_to_box">
+                                <span class="from_text">To:</span>
+                                <span class="from_price">800</span>
+                            </div>
+                        </div>
+                        <button class="choose_button" type="button">
+                            SHOW
+                        </button>
+                    </div>
+                </form>
+                <div class="card_container">
+                    <div class="card_card">
+                        <div class="card_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="card_img">
+                        </div>
+                        <div class="card_discription">
+                            <h5 class="card_name">
+                                Barbers
+                            </h5>
+                            <p class="card_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="card_text">
+                                New york original
+                            </p>
+                            <span class="card_price">
+                                $ 490.00
+                            </span>
+                            <div class="card_button">
+                                <button type="button" class="card_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="card_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_card">
+                        <button class="card_sale" disabled>SALE</button>
+                        <div class="card_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="card_img">
+                        </div>
+                        <div class="card_discription">
+                            <h5 class="card_name">
+                                Barbers
+                            </h5>
+                            <p class="card_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="card_text">
+                                New york original
+                            </p>
+                            <span class="card_price">
+                                $ 490.00
+                            </span>
+                            <div class="card_button">
+                                <button type="button" class="card_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="card_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_card">
+                        <button class="card_sale card_sale-tablet" disabled>SALE</button>
+                        <div class="card_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="card_img">
+                        </div>
+                        <div class="card_discription">
+                            <h5 class="card_name">
+                                Barbers
+                            </h5>
+                            <p class="card_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="card_text">
+                                New york original
+                            </p>
+                            <span class="card_price">
+                                $ 490.00
+                            </span>
+                            <div class="card_button">
+                                <button type="button" class="card_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="card_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_card card-hidden">
+                        <div class="card_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="card_img">
+                        </div>
+                        <div class="card_discription">
+                            <h5 class="card_name">
+                                Barbers
+                            </h5>
+                            <p class="card_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="card_text">
+                                New york original
+                            </p>
+                            <span class="card_price">
+                                $ 490.00
+                            </span>
+                            <div class="card_button">
+                                <button type="button" class="card_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="card_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_card card-hidden">
+                        <button class="card_sale card_sale-tablet" disabled>SALE</button>
+                        <div class="card_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="card_img">
+                        </div>
+                        <div class="card_discription">
+                            <h5 class="card_name">
+                                Barbers
+                            </h5>
+                            <p class="card_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="card_text">
+                                New york original
+                            </p>
+                            <span class="card_price">
+                                $ 490.00
+                            </span>
+                            <div class="card_button">
+                                <button type="button" class="card_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="card_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_card card-hidden">
+                        <button class="card_sale card_sale-desktop" disabled>SALE</button>
+                        <div class="card_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="card_img">
+                        </div>
+                        <div class="card_discription">
+                            <h5 class="card_name">
+                                Barbers
+                            </h5>
+                            <p class="card_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="card_text">
+                                New york original
+                            </p>
+                            <span class="card_price">
+                                $ 490.00
+                            </span>
+                            <div class="card_button">
+                                <button type="button" class="card_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="card_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="popular_products"><!--------------------popular_product START---------------------->
+        <div class="wrapper">
+            <div class="product">
+                <h4 class="section_title">
+                    Popular products
+                </h4>
+                <div class="product_container">
+                    <div class="product_card">
+                        <button class="product_sale sale_hidden-popular" disabled>SALE</button>
+                        <div class="product_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="product_img">
+                        </div>
+                        <div class="product_discription">
+                            <h5 class="product_name">
+                                Barbers
+                            </h5>
+                            <p class="product_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="product_text">
+                                New york original
+                            </p>
+                            <span class="product_price">
+                                $ 490.00
+                            </span>
+                            <div class="product_button">
+                                <button type="button" class="product_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="product_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card card-hidden">
+                        <div class="product_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="product_img">
+                        </div>
+                        <div class="product_discription">
+                            <h5 class="product_name">
+                                Barbers
+                            </h5>
+                            <p class="product_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="product_text">
+                                New york original
+                            </p>
+                            <span class="product_price">
+                                $ 490.00
+                            </span>
+                            <div class="product_button">
+                                <button type="button" class="product_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="product_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card card-hidden">
+                        <button class="product_sale" disabled>SALE</button>
+                        <div class="product_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="product_img">
+                        </div>
+                        <div class="product_discription">
+                            <h5 class="product_name">
+                                Barbers
+                            </h5>
+                            <p class="product_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="product_text">
+                                New york original
+                            </p>
+                            <span class="product_price">
+                                $ 490.00
+                            </span>
+                            <div class="product_button">
+                                <button type="button" class="product_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="product_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card card-hidden">
+                        <div class="product_images">
+                            <img src="./assets/images/png/beard-balm.png" alt="beard-balm" class="product_img">
+                        </div>
+                        <div class="product_discription">
+                            <h5 class="product_name">
+                                Barbers
+                            </h5>
+                            <p class="product_text">
+                                Premium beard balm 50 ml
+                            </p>
+                            <p class="product_text">
+                                New york original
+                            </p>
+                            <span class="product_price">
+                                $ 490.00
+                            </span>
+                            <div class="product_button">
+                                <button type="button" class="product_now">
+                                    shop now
+                                </button>
+                                <button type="button" class="product_add"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_slider">
+                    <button type="button" class="slider_button prev-slide"></button>
+                    <button type="button" class="slider_button next-slide"></button>
+                </div>
+            </div>
+        </div>
+    </section><!--------------------popular_product START---------------------->
+    <footer class="footer"><!--------------------footer START---------------------->
+        <div class="wrapper">
+            <div class="footer_box">
+                <a href="#" class="footer_logo">
+                    <img class="footer_img" src="./assets/images/png/Logo.png" alt="Logo Barber Shop">
+                </a>
+                <div class="footer_nav">
+                    <div class="footer_links">
+                        <a href="index.html" class="footer_navigation footer_navigation--active">
+                            Home
+                        </a>
+                        <a href="page2.html" class="footer_navigation">
+                            Shop
+                        </a>
+                        <a target="_blank" href="#" class="footer_navigation">
+                            Gallery
+                        </a>
+                        <a target="_blank" href="#" class="footer_navigation">
+                            Contact us
+                        </a>
+                    </div>
+                    <div class="footer_visit">
+                        <h4 class="footer_title">
+                            Visit us
+                        </h4>
+                        <p class="footer_text">
+                            Ukraine, Kyiv 
+                        </p>
+                        <p class="footer_text">
+                            str. Oleshi 15, 62000 
+                        </p>
+                    </div>
+                    <div class="footer_contact">
+                        <h4 class="footer_title">
+                            Contact us
+                        </h4>
+                        <a target="_blank" href="mail:support@gmail.com" class="footer_link">
+                            support@gmail.com 
+                        </a>
+                        <a target="_blank" href="tel:+38 (044) 15 25 66 954" class="footer_link">
+                            +38 (044) 15 25 66 954
+                        </a>
+                    </div>
+                    <div class="footer_follow">
+                        <h4 class="footer_title">
+                            Follow us
+                        </h4>
+                        <div class="footer_socials">
+                            <a target="_blank" href="#" class="footer_soc">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 15.5C5.8 15.5 5.5 15.5 4.66667 15.45C4.06332 15.4381 3.46621 15.3254 2.9 15.1167C2.4466 14.9435 2.03485 14.6765 1.69166 14.3333C1.34846 13.9901 1.08154 13.5784 0.908333 13.125C0.688297 12.5524 0.567129 11.9465 0.55 11.3333C0.5 10.5 0.5 10.2083 0.5 8C0.5 5.79167 0.5 5.5 0.55 4.66667C0.561924 4.06332 0.674587 3.46621 0.883333 2.9C1.05357 2.44198 1.31915 2.02535 1.6625 1.67769C2.00586 1.33003 2.41914 1.05927 2.875 0.883333C3.44911 0.671832 4.0549 0.559126 4.66667 0.55C5.5 0.5 5.79167 0.5 8 0.5C10.2083 0.5 10.5 0.5 11.3333 0.55C11.9367 0.561924 12.5338 0.674587 13.1 0.883333C13.5534 1.05654 13.9651 1.32346 14.3083 1.66666C14.6515 2.00985 14.9185 2.4216 15.0917 2.875C15.3117 3.44762 15.4329 4.05346 15.45 4.66667C15.45 5.5 15.5 5.825 15.5 8C15.5 10.175 15.5 10.5 15.45 11.3333C15.4381 11.9367 15.3254 12.5338 15.1167 13.1C14.9435 13.5534 14.6765 13.9651 14.3333 14.3083C13.9901 14.6515 13.5784 14.9185 13.125 15.0917C12.5588 15.3004 11.9617 15.4131 11.3583 15.425C10.5 15.5 10.2 15.5 8 15.5Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.00001 10.5485C7.49594 10.5485 7.00318 10.399 6.58405 10.119C6.16493 9.83891 5.83826 9.44086 5.64536 8.97516C5.45246 8.50945 5.40199 7.997 5.50033 7.50261C5.59867 7.00822 5.8414 6.55409 6.19784 6.19766C6.55428 5.84122 7.0084 5.59849 7.50279 5.50014C7.99718 5.4018 8.50963 5.45228 8.97534 5.64518C9.44105 5.83808 9.83909 6.16475 10.1191 6.58387C10.3992 7.003 10.5487 7.49575 10.5487 7.99983C10.5487 8.67577 10.2801 9.32403 9.80218 9.802C9.32422 10.28 8.67596 10.5485 8.00001 10.5485Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.9225 3.55371C12.9225 3.82985 12.6986 4.05371 12.4225 4.05371C12.1463 4.05371 11.9225 3.82985 11.9225 3.55371C11.9225 3.27757 12.1463 3.05371 12.4225 3.05371C12.6986 3.05371 12.9225 3.27757 12.9225 3.55371Z" stroke="#222222"/>
+                                </svg>
+                            </a>
+                            <a target="_blank" href="#" class="footer_soc">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.29 2C17.29 1 13.49 1 10 1C6.51 1 2.67 1 1.72 2C0.77 3 0.5 4.09 0.5 8C0.5 11.91 0.77 13.06 1.72 14C2.67 14.94 6.52 15 10 15C13.48 15 17.33 15 18.29 14C19.25 13 19.5 11.89 19.5 8C19.5 4.11 19.24 2.94 18.29 2ZM13.35 8.18L7.8 11.38C7.65 11.46 7.54 11.38 7.54 11.22V4.78C7.54 4.61 7.66 4.54 7.8 4.62L13.35 7.84C13.5 7.94 13.5 8.08 13.35 8.16V8.18Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a target="_blank" href="#" class="footer_soc">
+                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.52619 4.56634V6.04002H1.31567V8.5158H3.52619V15H6.1125V8.5158H8.32303L8.6546 6.06949H6.08303V4.59581C6.08303 3.39476 6.77566 3.29161 7.28408 3.29161H8.68408V1.08108C8.68408 1.08108 7.74092 1.00003 6.47356 1.00003C4.67567 0.992664 3.52619 2.23792 3.52619 4.56634Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!--------------------footer END---------------------->
+    <script>
+        function openbox(box) {
+            display = document.getElementById('box').style.display;
+            if (display === 'block') {
+                document.getElementById('box').style.display = 'none';
+            } else { 
+                document.getElementById('box').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
