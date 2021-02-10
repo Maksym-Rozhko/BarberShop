@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="pop-up">
-        <button class="pop-up-close" type="button" onclick="this.parentElement.style.display='none';"></button>
         <form class="pop-up-form" action="https://fom.in.ua/echo" method="POST">
+            <button class="pop-up-close" type="button"></button>
             <h3 class="pop-up-title">
                 Contact us!
             </h3>
@@ -39,27 +39,125 @@
                 contact me
             </button>
         </form>
+        <form class="pop-up-form form_booking" action="https://fom.in.ua/echo" method="POST">
+            <button class="pop-up-close close-booking" type="button"></button>
+            <h4 class="form_title form_text">
+                Book an appointment right now!
+            </h4>
+            <p class="form_request form_text">
+                Please complete all these fields.
+            </p>
+            <label class="pop-up-label">
+                Name:
+                <input class="pop-up-input inner-name" placeholder="Gregory Simmmons" type="text" name="name" required>
+            </label>
+            <div class="pop-up-box">
+                <label class="pop-up-label">
+                    Date:
+                    <input class="pop-up-input" placeholder="Enter date" type="date" name="date" required>
+                </label>
+                <label class="pop-up-label label-time">
+                    Time:
+                    <input class="pop-up-input" placeholder="Enter time" type="time" name="time" required>
+                </label>
+            </div>
+            <div class="form_box">
+                <legend class="form_master">
+                    Choose a master:
+                </legend>
+                <div class="form_choose">
+                    <div class="check-flex">
+                        <label class="check option">
+                            <input class="check-input" type="radio" name="master" valur="master1">
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check option">
+                            <input class="check-input" type="radio" name="master" valur="master2" checked>
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                    </div>
+                    <div class="check-flex">
+                        <label class="check option">
+                            <input class="check-input" type="radio" name="master" valur="master3">
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                        <label class="check option">
+                            <input class="check-input" type="radio" name="master" valur="master4">
+                            <span class="radio-box"></span>
+                            Choose something
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form_box">
+                <legend class="form_master">
+                    Choose a master:
+                </legend>
+                <div class="form_choose">
+                    <div class="check-flex">
+                        <label class="option">
+                            <input class="check-input" type="checkbox" name="master" valur="master5" checked>
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="option">
+                            <input class="check-input" type="checkbox" name="master" valur="master6">
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="option check-option-hidden">
+                            <input class="check-input" type="checkbox" name="master" valur="master7" checked>
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                    </div>
+                    <div class="check-flex">
+                        <label class="option">
+                            <input class="check-input" type="checkbox" name="master" valur="master8" checked>
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="option check-option-hidden">
+                            <input class="check-input" type="checkbox" name="master" valur="master9">
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                        <label class="option">
+                            <input class="check-input" type="checkbox" name="master" valur="master10" checked>
+                            <span class="check-box"></span>
+                            Choose something
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="header_button button-margin">
+                Book now
+            </button>
+        </form>
     </div>
-    <header class="header page_header"><!--------------------header START---------------------->
+    <header id="scrollTop" class="header page_header"><!--------------------header START---------------------->
         <div class="header_fixed">
             <div class="wrapper">
                 <div class="menu">
                     <div class="menu_burger">
-                        <button class="nav-burger" type="button" onclick="openbox('box');">
-                            <span class="nav-burger-item page_burger"></span>
+                        <button class="nav-burger" type="button">
+                            <span class="nav-burger-item"></span>
                         </button>
                     </div>
-                    <a href="#" class="navigation_logo nav-none">
+                    <a href="#scrollTop" class="navigation_logo nav-none">
                         <img class="nav_logo" src="./assets/images/png/Logo.png" alt="Barber Shop logo">
                     </a>
                     <div class="navigation_links nav-none">
                         <a href="index.html" class="navigation_link">
                             Home
                         </a>
-                        <a href="page2.html" class="navigation_link navigation--active">
+                        <a href="#scrollTop" class="navigation_link navigation--active">
                             Shop
                         </a>
-                        <a href="#" target="_blank" class="navigation_link">
+                        <a href="#" class="navigation_link">
                             Gallery
                         </a>
                     </div>
@@ -72,20 +170,20 @@
                         </span>
                     </a>
                     <div class="header-content_button nav-none">
-                        <button type="button" class="header_button button-margin">
+                        <button id="openPopUp" type="button" class="header_button button-margin">
                             Contact us
                         </button>
-                        <button type="button" class="header_button">
+                        <button id="bookingAnchor" type="button" class="header_button">
                             Book now
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="navigation page_navigation" id="box">
+        <nav class="navigation page_navigation">
             <div class="wrapper">
                 <div class="menu_burger">
-                    <button class="nav-burger active" type="button" onclick="openbox('box');">
+                    <button class="nav-burger active" type="button">
                         <span class="nav-burger-item"></span>
                     </button>
                 </div>
@@ -676,15 +774,6 @@
             </div>
         </div>
     </footer><!--------------------footer END---------------------->
-    <script>
-        function openbox(box) {
-            display = document.getElementById('box').style.display;
-            if (display === 'block') {
-                document.getElementById('box').style.display = 'none';
-            } else { 
-                document.getElementById('box').style.display = 'block';
-            }
-        }
-    </script>
+    <script src="./js/app.min.js"></script>
 </body>
 </html>
